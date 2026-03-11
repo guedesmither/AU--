@@ -567,21 +567,20 @@
 
     <!-- Tour Virtual Section - Full Width -->
     <section id="tour-virtual" class="py-20 bg-white">
-        <div class="w-full px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div class="w-full px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12">
             <!-- Section Header -->
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            <div class="text-center mb-8 sm:mb-12">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
                     🎬 Tour Virtual
                 </h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                <p class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-2">
                     Conheça nossas instalações de perto! Assista ao tour virtual ou navegue pela galeria de fotos.
                 </p>
             </div>
             
-            <!-- Full Width Video + Carousel Grid -->
-            <div class="grid lg:grid-cols-2 gap-6 lg:gap-8 mb-10">
-                <!-- Video Tour - Same height as carousel (450px) -->
-                <div class="relative h-[300px] sm:h-[400px] lg:h-[450px]">
+            <!-- Video Tour - Full Width -->
+            <div class="mb-8 sm:mb-12">
+                <div class="relative h-[200px] sm:h-[250px] md:h-[300px] lg:h-[400px] w-full">
                     <video 
                         id="virtualTourVideo"
                         class="w-full h-full rounded-xl shadow-xl object-cover"
@@ -592,81 +591,86 @@
                         <source src="videos/virtual-tour.webm" type="video/webm">
                         Seu navegador não suporta o vídeo.
                     </video>
-                    <!-- Video Label -->
-                    <div class="absolute top-4 left-4 bg-primary-color/90 text-white px-3 py-1 rounded-full text-sm font-semibold z-10">
-                        <i class="fas fa-video mr-1"></i> Tour Virtual
+                    <!-- Video Label - Responsive -->
+                    <div class="absolute top-2 left-2 bg-primary-color/90 text-white px-2 py-1 rounded-full text-xs font-semibold z-10">
+                        <i class="fas fa-video mr-1"></i> 
+                        Tour
                     </div>
                 </div>
+            </div>
+            
+            <!-- Photo Carousel - Full Width Below Video -->
+            <div class="w-full bg-white py-4 sm:py-6 lg:py-8">
+                <div class="text-center mb-6">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">
+                        📸 Galeria de Fotos
+                    </h3>
+                    <p class="text-sm sm:text-base text-gray-600">
+                        Veja mais momentos especiais em nossa creche e hotel
+                    </p>
+                </div>
                 
-                <!-- Photo Carousel - Horizontal Infinito -->
-                <div class="w-full bg-white py-8">
-                    <div class="carousel-horizontal overflow-hidden relative h-64 md:h-80 lg:h-96">
-                        <div class="carousel-track flex animate-scroll">
-                            <div class="carousel-slide min-w-[300px] md:min-w-[400px] h-full mx-2 rounded-lg overflow-hidden shadow-lg">
-                                <img src="images/carousel/foto1.jpg" alt="Cachorro feliz na creche" class="w-full h-full object-cover">
-                            </div>
-                            <div class="carousel-slide min-w-[300px] md:min-w-[400px] h-full mx-2 rounded-lg overflow-hidden shadow-lg">
-                                <img src="images/carousel/foto2.jpg" alt="Pets brincando" class="w-full h-full object-cover">
-                            </div>
-                            <div class="carousel-slide min-w-[300px] md:min-w-[400px] h-full mx-2 rounded-lg overflow-hidden shadow-lg">
-                                <img src="images/carousel/foto3.jpg" alt="Instalações da creche" class="w-full h-full object-cover">
-                            </div>
-                            <div class="carousel-slide min-w-[300px] md:min-w-[400px] h-full mx-2 rounded-lg overflow-hidden shadow-lg">
-                                <img src="images/carousel/foto4.jpg" alt="Equipe AU-Ê" class="w-full h-full object-cover">
-                            </div>
-                            <div class="carousel-slide min-w-[300px] md:min-w-[400px] h-full mx-2 rounded-lg overflow-hidden shadow-lg">
-                                <img src="images/carousel/foto5.jpg" alt="Momentos felizes" class="w-full h-full object-cover">
-                            </div>
-                            <div class="carousel-slide min-w-[300px] md:min-w-[400px] h-full mx-2 rounded-lg overflow-hidden shadow-lg">
-                                <img src="images/carousel/foto6.JPG" alt="Mais momentos especiais" class="w-full h-full object-cover">
-                            </div>
-                            
-                            <!-- Duplicadas para loop infinito -->
-                            <div class="carousel-slide min-w-[300px] md:min-w-[400px] h-full mx-2 rounded-lg overflow-hidden shadow-lg">
-                                <img src="images/carousel/foto1.jpg" alt="Cachorro feliz na creche" class="w-full h-full object-cover">
-                            </div>
-                            <div class="carousel-slide min-w-[300px] md:min-w-[400px] h-full mx-2 rounded-lg overflow-hidden shadow-lg">
-                                <img src="images/carousel/foto2.jpg" alt="Pets brincando" class="w-full h-full object-cover">
-                            </div>
-                            <div class="carousel-slide min-w-[300px] md:min-w-[400px] h-full mx-2 rounded-lg overflow-hidden shadow-lg">
-                                <img src="images/carousel/foto3.jpg" alt="Instalações da creche" class="w-full h-full object-cover">
-                            </div>
-                            <div class="carousel-slide min-w-[300px] md:min-w-[400px] h-full mx-2 rounded-lg overflow-hidden shadow-lg">
-                                <img src="images/carousel/foto4.jpg" alt="Equipe AU-Ê" class="w-full h-full object-cover">
-                            </div>
-                            <div class="carousel-slide min-w-[300px] md:min-w-[400px] h-full mx-2 rounded-lg overflow-hidden shadow-lg">
-                                <img src="images/carousel/foto5.jpg" alt="Momentos felizes" class="w-full h-full object-cover">
-                            </div>
-                            <div class="carousel-slide min-w-[300px] md:min-w-[400px] h-full mx-2 rounded-lg overflow-hidden shadow-lg">
-                                <img src="images/carousel/foto6.JPG" alt="Mais momentos especiais" class="w-full h-full object-cover">
-                            </div>
+                <!-- Simplified Carousel -->
+                <div class="relative overflow-hidden h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px]">
+                    <div class="flex animate-scroll space-x-4">
+                        <div class="flex-shrink-0 w-[120px] sm:w-[140px] md:w-[160px] lg:w-[180px] h-full">
+                            <img src="images/carousel/foto1.jpg" alt="Cachorro feliz na creche" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        <div class="flex-shrink-0 w-[120px] sm:w-[140px] md:w-[160px] lg:w-[180px] h-full">
+                            <img src="images/carousel/foto2.jpg" alt="Pets brincando" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        <div class="flex-shrink-0 w-[120px] sm:w-[140px] md:w-[160px] lg:w-[180px] h-full">
+                            <img src="images/carousel/foto3.jpg" alt="Instalações da creche" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        <div class="flex-shrink-0 w-[120px] sm:w-[140px] md:w-[160px] lg:w-[180px] h-full">
+                            <img src="images/carousel/foto4.jpg" alt="Equipe AU-Ê" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        <div class="flex-shrink-0 w-[120px] sm:w-[140px] md:w-[160px] lg:w-[180px] h-full">
+                            <img src="images/carousel/foto5.jpg" alt="Momentos felizes" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        <div class="flex-shrink-0 w-[120px] sm:w-[140px] md:w-[160px] lg:w-[180px] h-full">
+                            <img src="images/carousel/foto6.JPG" alt="Mais momentos especiais" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        
+                        <!-- Duplicated for seamless loop -->
+                        <div class="flex-shrink-0 w-[120px] sm:w-[140px] md:w-[160px] lg:w-[180px] h-full">
+                            <img src="images/carousel/foto1.jpg" alt="Cachorro feliz na creche" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        <div class="flex-shrink-0 w-[120px] sm:w-[140px] md:w-[160px] lg:w-[180px] h-full">
+                            <img src="images/carousel/foto2.jpg" alt="Pets brincando" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        <div class="flex-shrink-0 w-[120px] sm:w-[140px] md:w-[160px] lg:w-[180px] h-full">
+                            <img src="images/carousel/foto3.jpg" alt="Instalações da creche" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        <div class="flex-shrink-0 w-[120px] sm:w-[140px] md:w-[160px] lg:w-[180px] h-full">
+                            <img src="images/carousel/foto4.jpg" alt="Equipe AU-Ê" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        <div class="flex-shrink-0 w-[120px] sm:w-[140px] md:w-[160px] lg:w-[180px] h-full">
+                            <img src="images/carousel/foto5.jpg" alt="Momentos felizes" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        <div class="flex-shrink-0 w-[120px] sm:w-[140px] md:w-[160px] lg:w-[180px] h-full">
+                            <img src="images/carousel/foto6.JPG" alt="Mais momentos especiais" class="w-full h-full object-cover rounded-lg">
                         </div>
                     </div>
                 </div>
-
-                <!-- CSS para o carrossel horizontal -->
-                <style>
-                    .carousel-track {
-                        animation: scroll 37.5s linear infinite;
-                    }
-                    
-                    @keyframes scroll {
-                        0% { transform: translateX(0); }
-                        100% { transform: translateX(-3320px); } /* 12 slides * 300px + 11 * 20px margin */
-                    }
-                    
-                    @media (min-width: 768px) {
-                        .carousel-track {
-                            animation: scroll 37.5s linear infinite;
-                        }
-                        
-                        @keyframes scroll {
-                            0% { transform: translateX(0); }
-                            100% { transform: translateX(-5040px); } /* 12 slides * 400px + 11 * 20px margin */
-                        }
-                    }
-                </style>
             </div>
+            
+            <!-- Simplified CSS -->
+            <style>
+                @keyframes scroll {
+                    0% { transform: translateX(0); }
+                    100% { transform: translateX(-50%); }
+                }
+                
+                .animate-scroll {
+                    animation: scroll 30s linear infinite;
+                    display: flex;
+                }
+                
+                .animate-scroll:hover {
+                    animation-play-state: paused;
+                }
+            </style>
             
             <!-- CTA Buttons -->
             <div class="text-center">
